@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Potatoify Images",
+    "version": "1.0",
+    "description": "Replaces all images on a webpage with potatoes.",
+    "permissions": ["activeTab"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["src/potato.png"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
